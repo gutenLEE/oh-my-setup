@@ -79,5 +79,6 @@ else
     exit 1
 fi
 
-
-
+claude mcp add playwright npx @playwright/mcp@latest
+npx @jpisnice/shadcn-ui-mcp-server --github-api-key $GITHUB_PERSONAL_ACCESS_TOKEN
+claude mcp add --transport http shadcn https://www.shadcn.io/api/mcp
