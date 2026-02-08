@@ -85,11 +85,18 @@ ZSH_THEME="powerlevel10k/powerlevel10k"  # 강력한 커스터마이징
 ### Zsh Autosuggestions
 
 - **기능**: 명령어 입력 시 회색 글씨로 이전 명령어 제안
-- **사용법**: `→` (오른쪽 화살표) 키로 제안 수락
+- **사용법**: `Tab` 키로 제안 수락 (기본 설정)
+  - 원래 기본값은 `→` (오른쪽 화살표) 키였지만, 더 편한 `Tab` 키로 변경되었습니다
 - **커스터마이징**:
   ```bash
   # ~/.zshrc에 추가
   ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#666666"  # 제안 색상 변경
+
+  # 다른 키로 변경하려면 (예: Ctrl+Space)
+  bindkey '^ ' autosuggest-accept  # Ctrl+Space
+
+  # 오른쪽 화살표로 되돌리려면
+  bindkey '^[[C' autosuggest-accept  # 오른쪽 화살표
   ```
 
 ### Oh My Posh (선택사항)

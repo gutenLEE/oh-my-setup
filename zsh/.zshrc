@@ -130,9 +130,11 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # Zsh Autosuggestions
 # ============================================
 # 명령어 입력 시 회색 글씨로 자동 제안을 표시합니다
-# 오른쪽 화살표(→) 키로 제안을 수락할 수 있습니다
+# Tab 키로 제안을 수락할 수 있습니다
 if [ -f $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
   source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+  # Tab 키로 자동완성 수락 (기본값: 오른쪽 화살표)
+  bindkey '^I' autosuggest-accept
 fi
 
 # ============================================

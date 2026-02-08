@@ -12,11 +12,17 @@ brew install oh-my-posh
 
 ### 2. 테마 파일 준비
 
-이 리포지토리의 샘플 테마 파일을 홈 디렉토리로 복사합니다:
+이 리포지토리의 샘플 테마 파일(**illusi0n** 테마)을 홈 디렉토리로 복사합니다:
 
 ```bash
 cp .sample.themes.json ~/themes.json
 ```
+
+**illusi0n 테마 특징:**
+- 주황색/파란색 컬러 스킴
+- 오른쪽 프롬프트에 메모리 사용률 표시 (예: 45% 8.2/16GB)
+- Git 상태에 따른 동적 색상 변화
+- 깔끔하고 미니멀한 디자인
 
 또는 원하는 테마를 직접 만들 수도 있습니다:
 
@@ -79,6 +85,10 @@ eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/테마�
 
 ## 추천 테마
 
+- **illusi0n** (기본 제공): 주황색/파란색 기반, 시스템 리소스 표시 (CPU, 메모리)
+  - 오른쪽에 메모리 사용률과 용량 표시
+  - Git 상태에 따라 색상 변화
+  - 깔끔하고 정보가 풍부한 디자인
 - **agnoster**: 깔끔하고 정보가 많은 프롬프트
 - **paradox**: 미니멀한 디자인
 - **powerlevel10k_rainbow**: 다채로운 색상
