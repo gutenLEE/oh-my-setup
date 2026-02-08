@@ -8,7 +8,9 @@
 oh-my-setup/
 ├── ai/          # AI 관련 도구 설정 (Aider, Claude Code 등)
 ├── ghostty/     # Ghostty 터미널 설정
+├── oh-my-posh/  # Oh My Posh 프롬프트 테마 설정
 ├── yazi/        # Yazi 파일 관리자 설정
+├── zsh/         # Zsh 설정 (Oh My Zsh + autosuggestions)
 └── ...          # 기타 설정들
 ```
 
@@ -43,6 +45,26 @@ ya pkg add yazi-rs/plugins:git  # Git 상태 표시 플러그인
 cd ghostty
 mkdir -p ~/.config/ghostty
 cp config ~/.config/ghostty/config
+```
+
+**Oh My Posh 프롬프트:**
+```bash
+cd oh-my-posh
+brew install oh-my-posh
+cp .sample.themes.json ~/themes.json
+# ~/.zshrc 파일에 다음 추가:
+# eval "$(oh-my-posh init zsh --config ~/themes.json)"
+# export TERM=xterm-256color
+```
+
+**Zsh 설정:**
+```bash
+cd zsh
+# 현재 .zshrc 백업
+cp ~/.zshrc ~/.zshrc.backup
+# Oh My Zsh + zsh-autosuggestions 설정 적용
+cp .zshrc ~/.zshrc
+source ~/.zshrc
 ```
 
 ## Git 설정 (gutenLEE 계정 사용)
