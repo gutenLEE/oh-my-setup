@@ -29,15 +29,17 @@ brew install p7zip jq
 
 Git 저장소에서 파일의 변경 상태(수정, 추가, 삭제 등)를 시각적으로 표시합니다.
 
+이 리포지토리의 `init.lua`와 `yazi.toml` 파일에 이미 설정이 포함되어 있습니다.
+
 **설치:**
 
 ```bash
 ya pkg add yazi-rs/plugins:git
 ```
 
-**설정 파일 생성:**
+**설정 파일 (참고용):**
 
-`~/.config/yazi/init.lua` 파일을 생성하고 다음 내용 추가:
+`init.lua`에 다음과 같이 설정되어 있습니다:
 
 ```lua
 require("git"):setup {
@@ -99,7 +101,13 @@ mkdir -p ~/.config/yazi
 
 # 설정 파일 복사
 cp yazi.toml ~/.config/yazi/yazi.toml
+cp init.lua ~/.config/yazi/init.lua
+
+# Git 플러그인 설치
+ya pkg add yazi-rs/plugins:git
 ```
+
+설정 적용 후 yazi를 재시작하면 Git 저장소에서 파일 상태가 표시됩니다.
 
 ## 주요 설정
 

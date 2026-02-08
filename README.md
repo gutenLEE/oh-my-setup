@@ -34,6 +34,8 @@ cp .sample.env .env
 cd yazi
 mkdir -p ~/.config/yazi
 cp yazi.toml ~/.config/yazi/yazi.toml
+cp init.lua ~/.config/yazi/init.lua
+ya pkg add yazi-rs/plugins:git  # Git 상태 표시 플러그인
 ```
 
 **Ghostty 터미널:**
