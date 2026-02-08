@@ -23,6 +23,72 @@ brew install poppler
 brew install p7zip jq
 ```
 
+## 플러그인
+
+### Git 상태 표시 (git.yazi)
+
+Git 저장소에서 파일의 변경 상태(수정, 추가, 삭제 등)를 시각적으로 표시합니다.
+
+**설치:**
+
+```bash
+ya pkg add yazi-rs/plugins:git
+```
+
+**설정 파일 생성:**
+
+`~/.config/yazi/init.lua` 파일을 생성하고 다음 내용 추가:
+
+```lua
+require("git"):setup {
+	order = 1500,
+}
+```
+
+`~/.config/yazi/yazi.toml` 파일에 다음 내용 추가:
+
+```toml
+[[plugin.prepend_fetchers]]
+id = "git"
+url = "*"
+run = "git"
+
+[[plugin.prepend_fetchers]]
+id = "git"
+url = "*/"
+run = "git"
+```
+
+**표시되는 Git 상태:**
+- `M` - 수정된 파일 (modified)
+- `A` - 추가된 파일 (added)
+- `D` - 삭제된 파일 (deleted)
+- `?` - 추적되지 않는 파일 (untracked)
+- `✔` - 변경 없음 (clean)
+
+**커스터마이징 (선택사항):**
+
+색상과 기호를 변경하려면 `init.lua`에서 `:setup()` 호출 전에 설정:
+
+```lua
+-- 스타일 설정
+th.git = th.git or {}
+th.git.modified = ui.Style():fg("blue")
+th.git.deleted = ui.Style():fg("red"):bold()
+th.git.added = ui.Style():fg("green")
+
+-- 기호 변경
+th.git.modified_sign = "M"
+th.git.deleted_sign = "D"
+th.git.added_sign = "+"
+th.git.untracked_sign = "?"
+th.git.clean_sign = "✔"
+
+require("git"):setup {
+	order = 1500,
+}
+```
+
 ## 설정 적용
 
 이 리포지토리의 설정 파일을 yazi 설정 디렉토리로 복사합니다:
