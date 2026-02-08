@@ -1,0 +1,68 @@
+# Ghostty 터미널 설정 파일
+# 경로: /Users/youhee/Library/Application Support/com.mitchellh.ghostty/config
+
+# 테마 설정
+# light: 밝은 모드에서 사용할 테마
+# dark: 어두운 모드에서 사용할 테마
+theme = "light:Horizon Bright,dark:Broadcast"
+
+# 폰트 패밀리
+# Nerd Font를 사용하여 아이콘 및 특수 문자 지원
+font-family = "JetBrainsMono NFM Regular"
+
+# 폰트 크기
+# 터미널에 표시되는 텍스트의 기본 크기
+font-size = 13
+
+# 윈도우 좌우 패딩
+# 터미널 내용과 윈도우 가장자리 사이의 좌우 여백 (픽셀)
+window-padding-x = 10
+
+# 윈도우 상하 패딩
+# 터미널 내용과 윈도우 가장자리 사이의 상하 여백 (픽셀)
+window-padding-y = 10
+
+# 윈도우 장식 활성화
+# 타이틀바 및 윈도우 경계선 표시 여부
+window-decoration = true
+
+# 커서 스타일
+# block: 블록 형태 커서
+# 다른 옵션: bar (수직선), underline (밑줄)
+cursor-style=block
+
+# 셀 높이 조정
+# 줄 간격을 기본 높이보다 35% 늘림 (가독성 향상)
+adjust-cell-height=35%
+
+# 마우스 스크롤 배율
+# 스크롤 속도를 기본값의 2배로 설정
+mouse-scroll-multiplier = 2
+
+# 윈도우 색공간
+# Display P3 색공간 사용 (macOS에서 더 넓은 색역 지원)
+window-colorspace = "display-p3"
+
+# 텍스트 선택 시 자동 복사
+# clipboard: 선택한 텍스트를 클립보드에 자동 복사
+copy-on-select = clipboard
+
+# 윈도우 패딩 균형
+# 패딩을 균등하게 분배하여 중앙 정렬
+window-padding-balance = true
+
+# 윈도우 상태 저장
+# always: 항상 윈도우 크기/위치 상태 저장
+window-save-state = always
+
+# macOS 타이틀바 스타일
+# transparent: 투명한 타이틀바 (콘텐츠가 타이틀바 아래로 확장)
+macos-titlebar-style = transparent
+
+# 배경 투명도
+# 0.0 (완전 투명) ~ 1.0 (불투명) 사이 값
+background-opacity = 0.8
+
+# 배경 블러 효과
+# 배경 뒤 콘텐츠에 적용할 블러 강도 (픽셀)
+background-blur = 90
