@@ -6,7 +6,9 @@
 
 ```
 oh-my-setup/
-├── ai/          # AI 관련 도구 설정
+├── ai/          # AI 관련 도구 설정 (Aider, Claude Code 등)
+├── ghostty/     # Ghostty 터미널 설정
+├── yazi/        # Yazi 파일 관리자 설정
 └── ...          # 기타 설정들
 ```
 
@@ -19,10 +21,26 @@ cd oh-my-setup
 ```
 
 2. 필요한 디렉토리로 이동하여 설정 적용:
+
+**AI 도구:**
 ```bash
 cd ai
 cp .sample.env .env
 # .env 파일 편집 후 setup.sh 실행
+```
+
+**Yazi 파일 관리자:**
+```bash
+cd yazi
+mkdir -p ~/.config/yazi
+cp yazi.toml ~/.config/yazi/yazi.toml
+```
+
+**Ghostty 터미널:**
+```bash
+cd ghostty
+mkdir -p ~/.config/ghostty
+cp config ~/.config/ghostty/config
 ```
 
 ## Git 설정 (gutenLEE 계정 사용)

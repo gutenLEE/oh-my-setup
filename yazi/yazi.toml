@@ -1,0 +1,11 @@
+# Yazi Configuration
+# 설치 위치: ~/.config/yazi/yazi.toml
+
+[mgr]
+# 숨김 파일/디렉토리(.로 시작하는 파일) 기본 표시
+show_hidden = true
+
+# 정렬 방식 설정
+# sort_by = "alphabetical"  # alphabetical, modified, created, extension, size
+# sort_reverse = false
+# sort_dir_first = true
