@@ -42,7 +42,16 @@ ya pkg add yazi-rs/plugins:git  # Git 상태 표시 플러그인
 
 **Ghostty 터미널:**
 ```bash
+# 1. Ghostty 앱 설치
+brew install --cask ghostty
+
+# 2. 설정 파일 복사
 cd ghostty
+
+# macOS
+cp config ~/Library/Application\ Support/com.mitchellh.ghostty/config
+
+# Linux
 mkdir -p ~/.config/ghostty
 cp config ~/.config/ghostty/config
 ```

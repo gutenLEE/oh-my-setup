@@ -1,11 +1,23 @@
 # Ghostty 설정
 
-Ghostty 터미널 에뮬레이터 설정 파일 관리
+Ghostty 터미널 에뮬레이터 설치 및 설정 파일 관리
+
+## 설치
+
+```bash
+brew install --cask ghostty
+```
 
 ## 설정 파일 경로
 
+**macOS**
 ```
-/Users/youhee/Library/Application Support/com.mitchellh.ghostty/config
+~/Library/Application Support/com.mitchellh.ghostty/config
+```
+
+**Linux** (XDG 표준 경로)
+```
+~/.config/ghostty/config
 ```
 
 ## 설명
