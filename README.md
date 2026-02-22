@@ -6,12 +6,13 @@
 
 ```
 oh-my-setup/
-├── ai/          # AI 관련 도구 설정 (Aider, Claude Code 등)
-├── ghostty/     # Ghostty 터미널 설정
-├── oh-my-posh/  # Oh My Posh 프롬프트 테마 설정
-├── yazi/        # Yazi 파일 관리자 설정
-├── zsh/         # Zsh 설정 (Oh My Zsh + autosuggestions)
-└── ...          # 기타 설정들
+├── ai/            # AI 관련 도구 설정 (Aider, Claude Code 등)
+├── ghostty/       # Ghostty 터미널 설정
+├── oh-my-posh/    # Oh My Posh 프롬프트 테마 설정
+├── superclaude/   # SuperClaude Framework (Claude Code 확장)
+├── yazi/          # Yazi 파일 관리자 설정
+├── zsh/           # Zsh 설정 (Oh My Zsh + autosuggestions)
+└── ...            # 기타 설정들
 ```
 
 ## 사용 방법
@@ -74,6 +75,14 @@ cp ~/.zshrc ~/.zshrc.backup
 # Oh My Zsh + zsh-autosuggestions 설정 적용
 cp .zshrc ~/.zshrc
 source ~/.zshrc
+```
+
+**SuperClaude Framework:**
+```bash
+brew install pipx && pipx ensurepath
+pipx install superclaude
+superclaude install
+# Claude Code 재시작 후 /sc 커맨드 사용 가능
 ```
 
 ## Git 설정 (gutenLEE 계정 사용)
