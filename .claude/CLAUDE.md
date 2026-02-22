@@ -12,6 +12,9 @@ oh-my-setup/
 │   ├── .sample.env  # 환경 변수 템플릿
 │   ├── .gitignore
 │   └── setup.sh     # AI 도구 설치 스크립트
+├── mcp/             # Claude Code MCP 서버 설정
+│   ├── README.md    # MCP 서버 설치 및 설정 가이드
+│   └── claude.json.sample  # mcpServers 섹션 샘플
 ├── ghostty/         # Ghostty 터미널 설정
 │   ├── README.md    # Ghostty 설치 및 설정 가이드
 │   ├── config       # Ghostty 설정 파일
@@ -28,6 +31,13 @@ AI 에이전트 도구(Aider, Claude Code 등) 설치 및 설정 스크립트
 - `setup.sh`: AI 도구 자동 설치 스크립트
 - `.sample.env`: API 키 등 환경 변수 템플릿
 - `.env`: 실제 환경 변수 (git ignored)
+
+### `/mcp`
+Claude Code에서 사용하는 MCP(Model Context Protocol) 서버 설정 및 가이드
+
+**파일:**
+- `README.md`: MCP 서버 설치 및 설정 방법
+- `claude.json.sample`: `~/.claude.json`의 `mcpServers` 섹션 샘플
 
 ### `/ghostty`
 Ghostty 터미널 에뮬레이터 설정 파일 및 가이드

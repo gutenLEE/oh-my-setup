@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:pypi.org)",
+      "Bash(which pipx && pipx --version)",
+      "Bash(brew install pipx && pipx ensurepath)",
+      "Bash(pipx install superclaude)",
+      "Bash(superclaude install 2>&1)",
+      "Bash(superclaude doctor 2>&1)",
+      "Bash(superclaude mcp --list 2>&1)",
+      "Bash(superclaude install --list 2>&1)",
+      "Bash(superclaude mcp --servers context7 sequential-thinking 2>&1)",
+      "Bash(superclaude mcp --help 2>&1)",
+      "Bash(claude mcp remove context7 && claude mcp remove sequential-thinking 2>&1)"
+    ]
+  }
+}

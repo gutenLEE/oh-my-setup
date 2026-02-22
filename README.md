@@ -7,6 +7,7 @@
 ```
 oh-my-setup/
 ├── ai/            # AI 관련 도구 설정 (Aider, Claude Code 등)
+├── mcp/           # Claude Code MCP 서버 설정
 ├── ghostty/       # Ghostty 터미널 설정
 ├── oh-my-posh/    # Oh My Posh 프롬프트 테마 설정
 ├── superclaude/   # SuperClaude Framework (Claude Code 확장)
