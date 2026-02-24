@@ -64,6 +64,21 @@ Chromium 브라우저를 제어하여 웹 스크래핑, 테스트, 자동화 작
 claude mcp add playwright --scope user -- npx -y @playwright/mcp@latest
 ```
 
+### figma - Figma 디자인 파일 조회
+
+Figma 파일, 프로젝트, 컴포넌트를 조회하고 디자인 정보를 가져옵니다.
+
+```bash
+# Figma Access Token 발급: https://www.figma.com/developers/api#access-tokens
+claude mcp add figma --scope user -e FIGMA_ACCESS_TOKEN=your-token-here -- npx -y @modelcontextprotocol/server-figma
+```
+
+**Access Token 발급 방법:**
+1. Figma 계정 설정 페이지 접속: https://www.figma.com/settings
+2. "Personal Access Tokens" 섹션에서 "Generate new token" 클릭
+3. 토큰 이름 입력 (예: "Claude Code MCP")
+4. 생성된 토큰을 복사하여 위 명령어의 `your-token-here`에 사용
+
 ## 확인 및 관리
 
 ```bash

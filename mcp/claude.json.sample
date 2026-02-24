@@ -18,6 +18,14 @@
       "args": ["-y", "@playwright/mcp@latest"],
       "env": {}
     },
+    "figma": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-figma"],
+      "env": {
+        "FIGMA_ACCESS_TOKEN": "your-figma-access-token-here"
+      }
+    },
     "example-with-api-key": {
       "type": "stdio",
       "command": "npx",
